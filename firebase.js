@@ -1,5 +1,6 @@
 import firebase from 'firebase'
 
+//firebase server
 const firebaseConfig = {
     apiKey: "AIzaSyBx-aWb4ST_xmy_o_YqY3NXfWYhoh_W3jg",
     authDomain: "whatsnext-v1.firebaseapp.com",
