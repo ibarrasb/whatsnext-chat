@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ChatIcon from '@material-ui/icons/Chat';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import SearchIcon from '@material-ui/icons/Search'
+import * as EmailValidator from 'email-validator'
 
 
 function Sidebar() {
@@ -12,7 +13,11 @@ function Sidebar() {
         "Please Enter a email address for a user you would like to chat with"
         )
         if(!input) return null;
+
+        if(EmailValidator.validate(input)){
+            //we need to add to db
     }
+}
 
     return (
         <Container>
